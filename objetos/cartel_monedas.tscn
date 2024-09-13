@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/cartel_monedas.gd" type="Script" id=1]
+
+[node name="cartel_monedas" type="Label"]
+margin_right = 66.0
+margin_bottom = 14.0
+rect_scale = Vector2( 4, 4 )
+text = "Monedas: "
+script = ExtResource( 1 )

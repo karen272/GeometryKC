@@ -1,2 +1,2 @@
-﻿55113
-C:/Users/karen/OneDrive/Escritorio/Godot_v3.5.3-stable_mono_win64/Godot_v3.5.3-stable_mono_win64.exe
+﻿61581
+D:/Godot_v3.5.3-stable_mono_win64/Godot_v3.5.3-stable_mono_win64.exe
