@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/backroundGame.jpg-5d7fe55523b3f4bed3bf63319c08cedc.stex"
+path="res://.import/portal.png-15ae10f0e83098c76644f54da2b8c58d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/backroundGame.jpg"
-dest_files=[ "res://.import/backroundGame.jpg-5d7fe55523b3f4bed3bf63319c08cedc.stex" ]
+source_file="res://Images/portal.png"
+dest_files=[ "res://.import/portal.png-15ae10f0e83098c76644f54da2b8c58d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/crustaceoCascarudo.jpg-63028d4892a7fd9d7897c83c18d07ac6.stex"
+path="res://.import/BobEsponja.png-188fa279793570513915111f9aa08959.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/crustaceoCascarudo.jpg"
-dest_files=[ "res://.import/crustaceoCascarudo.jpg-63028d4892a7fd9d7897c83c18d07ac6.stex" ]
+source_file="res://Images/BobEsponja.png"
+dest_files=[ "res://.import/BobEsponja.png-188fa279793570513915111f9aa08959.stex" ]
 
 [params]
 

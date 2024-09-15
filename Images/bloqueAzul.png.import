@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/burger.png-7c3d21ed98c3f6038e68d72d967f3675.stex"
+path="res://.import/bloqueAzul.png-e9c98c4a90fd415550e907c57544b200.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/burger.png"
-dest_files=[ "res://.import/burger.png-7c3d21ed98c3f6038e68d72d967f3675.stex" ]
+source_file="res://Images/bloqueAzul.png"
+dest_files=[ "res://.import/bloqueAzul.png-e9c98c4a90fd415550e907c57544b200.stex" ]
 
 [params]
 

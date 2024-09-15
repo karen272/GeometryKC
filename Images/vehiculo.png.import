@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/planktonPersonaje.jpg-6f91ceb959a25cc27ae0368d3ced431c.stex"
+path="res://.import/vehiculo.png-3c0373be52ceea9cf3b6061ee7935477.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/planktonPersonaje.jpg"
-dest_files=[ "res://.import/planktonPersonaje.jpg-6f91ceb959a25cc27ae0368d3ced431c.stex" ]
+source_file="res://Images/vehiculo.png"
+dest_files=[ "res://.import/vehiculo.png-3c0373be52ceea9cf3b6061ee7935477.stex" ]
 
 [params]
 

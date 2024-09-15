@@ -1,8 +1,8 @@
 extends Node
 
-var moneda= 0 
+var coleccionable= 0 
 
-signal moneda_chanchaged(moneda)
+signal Coleccionable_chanchaged(coleccionable)
 
-func refresh_moneda(var delta):
-    moneda += delta
+func refresh_Coleccionable(var delta):
+    coleccionable += delta

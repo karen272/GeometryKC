@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloqueAzul.png-549d348d43f63f186c94a63a1e105478.stex"
+path="res://.import/crustaceoCascarudo.jpg-266d9d6b687de123052c7ee39a266038.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/bloqueAzul.png"
-dest_files=[ "res://.import/bloqueAzul.png-549d348d43f63f186c94a63a1e105478.stex" ]
+source_file="res://Images/crustaceoCascarudo.jpg"
+dest_files=[ "res://.import/crustaceoCascarudo.jpg-266d9d6b687de123052c7ee39a266038.stex" ]
 
 [params]
 
