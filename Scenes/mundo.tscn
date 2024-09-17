@@ -96,6 +96,4 @@ custom_styles/normal = SubResource( 10 )
 text = "    V: 3.5.3"
 
 [connection signal="pressed" from="VBoxContainer/BtnPlay" to="." method="_on_BtnPlay_pressed"]
-[connection signal="pressed" from="VBoxContainer/BtnPlay" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="VBoxContainer/BtnPlay" to="." method="_on_BtnJugar_pressed"]
 [connection signal="pressed" from="VBoxContainer2/BtnQuit" to="." method="_on_BtnQuit_pressed"]

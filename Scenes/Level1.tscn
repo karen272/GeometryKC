@@ -5,7 +5,8 @@
 [ext_resource path="res://Objects/Spike.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Objects/Coleccionable.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Objects/objetoSuelo.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scripts/portal.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Objects/portal.tscn" type="PackedScene" id=6]
+
 
 [node name="Node2D" type="Node2D"]
 
