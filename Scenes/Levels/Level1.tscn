@@ -1,26 +1,13 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Objects/objetoPersonaje.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Objects/objetoBloque.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Objects/Spike.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Objects/Coleccionable.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Objects/objetoSuelo.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Objects/portal.tscn" type="PackedScene" id=6]
-
+[ext_resource path="res://Scenes/Player/objetoPersonaje.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Collisionable/objetoBloque.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Collisionable/Spike.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Collisionable/Coleccionable.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Player/objetoSuelo.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Collisionable/portal.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="jugador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 83, 524 )
-
-[node name="Camera2D" type="Camera2D" parent="jugador"]
-offset = Vector2( 400, 0 )
-current = true
-zoom = Vector2( 2, 2 )
-limit_left = -400
-limit_bottom = 720
-limit_smoothed = true
-smoothing_enabled = true
 
 [node name="StaticBody2D2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1459, 497 )
@@ -321,4 +308,14 @@ scale = Vector2( 0.4, 0.4 )
 position = Vector2( 11286, -96 )
 scale = Vector2( 6.01629, 5.53085 )
 
-[connection signal="area_entered" from="portal" to="jugador" method="_on_portal_area_entered"]
+[node name="jugador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 83, 524 )
+
+[node name="Camera2D" type="Camera2D" parent="jugador"]
+offset = Vector2( 400, 0 )
+current = true
+zoom = Vector2( 2, 2 )
+limit_left = -400
+limit_bottom = 720
+limit_smoothed = true
+smoothing_enabled = true

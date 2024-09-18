@@ -1,12 +1,12 @@
 extends Label
-var personaje
+#var personaje
 
 func _process(delta):
     $".".text="Hamburguesistas: "+str(Global.coleccionable)
     
 
-func _ready():
+#func _ready():
     # Encuentra al personaje en la escena principal
-    personaje = get_tree().root.get_node("res://scripts/jugador.gd")  
+    #personaje = get_tree().root.get_node("res://scripts/Player/jugador.gd")  
 
    

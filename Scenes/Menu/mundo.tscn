@@ -1,19 +1,19 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://scripts/mundo.gd" type="Script" id=1]
+[ext_resource path="res://Xolonium-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/crustaceoCascarudo.jpg" type="Texture" id=2]
-[ext_resource path="res://Xolonium-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scripts/Menu/mundo.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.145098, 0.631373, 0.666667, 0.517647 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 70
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.129412, 0.317647, 0.568627, 1 )
@@ -23,7 +23,7 @@ bg_color = Color( 0.329412, 0.501961, 0.737255, 0.658824 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 70
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.129412, 0.317647, 0.568627, 1 )
@@ -33,13 +33,13 @@ bg_color = Color( 0.329412, 0.501961, 0.737255, 0.658824 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 25
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=10]
 bg_color = Color( 0.0666667, 0.894118, 0.854902, 1 )
 
 [node name="mundo" type="Node2D"]
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="backround" type="Node2D" parent="."]
 

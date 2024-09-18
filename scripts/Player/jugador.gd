@@ -5,7 +5,6 @@ const JUMP_VELOCITY = -1000
 
 var gravity = 4100
 var velocity = Vector2()
-var isUfo = false
 var is_dead = false
 var has_started = false
 var jump_count = 0
@@ -30,10 +29,9 @@ func _physics_process(delta):
     else:
         jump_count = 0
 
-    if Input.is_action_just_pressed("salto"):
-        if isUfo or jump_count < max_jumps:
-            velocity.y = JUMP_VELOCITY
-            jump_count += 1
+    if Input.is_action_just_pressed("salto") and jump_count < max_jumps:
+        velocity.y = JUMP_VELOCITY
+        jump_count += 1
 
     velocity.x = SPEED * delta
     velocity = move_and_slide(velocity, Vector2.UP)
@@ -53,16 +51,3 @@ func death():
 
 func _on_Timer_timeout():
     get_tree().reload_current_scene()
-
-func _on_portal_area_entered(area):
-    if area.is_in_group("portal"):
-        match area.tipo:
-            0:
-                var vehiculo_texture = preload("res://Images/vehiculo.png")
-                
-                if vehiculo_texture:
-                    # Asegúrate de cambiar la textura correctamente
-                    $Sprite.visible = false  # Ocultar para forzar el cambio de textura
-                    $Sprite.texture = vehiculo_texture
-                    $Sprite.visible = true  # Mostrar nuevamente
-                    isUfo = true
