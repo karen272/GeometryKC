@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Images/chooseLvl.jpg" type="Texture" id=1]
 [ext_resource path="res://Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scripts/Menu/ChooseLavel.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -21,6 +22,7 @@ bg_color = Color( 0.129412, 0.317647, 0.568627, 1 )
 bg_color = Color( 0.329412, 0.501961, 0.737255, 0.658824 )
 
 [node name="ChooseLvl" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -67,3 +69,6 @@ custom_fonts/font = SubResource( 3 )
 custom_styles/hover = SubResource( 4 )
 custom_styles/normal = SubResource( 5 )
 text = "Level 2"
+
+[connection signal="pressed" from="VBoxContainer/BtnLvl1" to="." method="_on_BtnLvl1_pressed"]
+[connection signal="pressed" from="VBoxContainer2/BtnLvl2" to="." method="_on_BtnLvl2_pressed"]

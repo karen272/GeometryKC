@@ -49,5 +49,8 @@ func death():
         $Timer.start()
         Global.coleccionable = 0
 
+
+
+
 func _on_Timer_timeout():
     get_tree().reload_current_scene()

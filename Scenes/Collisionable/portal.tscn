@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 25.5, 133 )
 
-[node name="portal" type="Area2D" groups=["portal"]]
+[node name="portal" type="Area2D" groups=["portals"]]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

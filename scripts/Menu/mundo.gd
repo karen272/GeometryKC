@@ -2,7 +2,7 @@ extends Node2D
 
 
 func _on_BtnPlay_pressed():
-    get_tree().change_scene("res://Scenes/Levels/Level1.tscn")
+    get_tree().change_scene("res://Scenes/Menu/ChooseLvl.tscn")
     pass # Replace with function body.
 
 
