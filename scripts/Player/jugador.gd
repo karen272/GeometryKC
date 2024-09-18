@@ -54,3 +54,8 @@ func death():
 
 func _on_Timer_timeout():
     get_tree().reload_current_scene()
+
+
+func _on_portal_body_entered(body):
+    get_tree().change_scene("res://Scenes/Menu/ChooseLvl.tscn")
+    pass # Replace with function body.
