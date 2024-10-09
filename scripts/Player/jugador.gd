@@ -11,6 +11,7 @@ var jump_count = 0
 var max_jumps = 2
 
 func _ready():
+    $SoundBackground.play()
     $Timer.wait_time = 1.0
     $Timer.one_shot = true
     $Timer.stop()
