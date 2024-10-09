@@ -1,0 +1,151 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Images/burger.png" type="Texture" id=2]
+[ext_resource path="res://Images/BobEsponja.png" type="Texture" id=3]
+[ext_resource path="res://Images/space.png" type="Texture" id=4]
+[ext_resource path="res://Images/backroundInicio.jpg" type="Texture" id=5]
+[ext_resource path="res://Images/triangulo.png" type="Texture" id=6]
+[ext_resource path="res://Images/portal.png" type="Texture" id=7]
+[ext_resource path="res://Images/bloqueAzul.png" type="Texture" id=8]
+[ext_resource path="res://Images/flechaa.png" type="Texture" id=9]
+[ext_resource path="res://scripts/Menu/HowToPlay.gd" type="Script" id=10]
+[ext_resource path="res://sounds/introSound.mp3" type="AudioStream" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.145098, 0.631373, 0.666667, 0.517647 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 55
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.129412, 0.317647, 0.568627, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.329412, 0.501961, 0.737255, 0.658824 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 51
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.329412, 0.501961, 0.737255, 0.658824 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 48
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.329412, 0.501961, 0.737255, 0.658824 )
+
+[node name="HowToPlay" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="Backround" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Backround"]
+position = Vector2( 647, 395 )
+scale = Vector2( 1.78809, 1.55042 )
+texture = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 201.0
+margin_top = 71.0
+margin_right = 997.0
+margin_bottom = 216.0
+rect_scale = Vector2( 0.736671, 0.720834 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+text = "  How To Play"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 893.0
+margin_top = 42.0
+margin_right = 1164.0
+margin_bottom = 111.0
+rect_scale = Vector2( 1.28, 1.28 )
+
+[node name="BtnBack" type="Button" parent="VBoxContainer"]
+margin_right = 271.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+text = "Back"
+
+[node name="Personaje" type="Sprite" parent="."]
+position = Vector2( 121.626, 635.065 )
+scale = Vector2( 0.512003, 0.668539 )
+texture = ExtResource( 3 )
+
+[node name="Personaje2" type="Sprite" parent="."]
+position = Vector2( 427.626, 635.065 )
+scale = Vector2( 0.512003, 0.668539 )
+texture = ExtResource( 3 )
+
+[node name="Space" type="Sprite" parent="."]
+position = Vector2( 305, 382 )
+scale = Vector2( 0.865668, 0.583547 )
+texture = ExtResource( 4 )
+
+[node name="Spike" type="Sprite" parent="."]
+position = Vector2( 272.626, 650.065 )
+scale = Vector2( 0.195261, 0.205297 )
+texture = ExtResource( 6 )
+
+[node name="arrow" type="Sprite" parent="."]
+position = Vector2( 279.626, 538.066 )
+rotation = -0.261799
+scale = Vector2( 0.511453, 0.364434 )
+texture = ExtResource( 9 )
+
+[node name="bloque" type="Sprite" parent="."]
+position = Vector2( 472, 705 )
+scale = Vector2( 10.2989, 0.284212 )
+texture = ExtResource( 8 )
+
+[node name="Portal" type="Sprite" parent="."]
+position = Vector2( 759, 420 )
+scale = Vector2( 2.03401, 2.03401 )
+texture = ExtResource( 7 )
+
+[node name="burger" type="Sprite" parent="."]
+visible = false
+position = Vector2( 724, 625 )
+scale = Vector2( 0.722, 0.722 )
+texture = ExtResource( 2 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 38.0
+margin_top = 230.0
+margin_right = 735.0
+margin_bottom = 309.0
+rect_scale = Vector2( 0.854478, 1.07611 )
+custom_fonts/font = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+text = "    Press space to jump"
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 917.0
+margin_top = 475.0
+margin_right = 1253.0
+margin_bottom = 655.0
+rect_scale = Vector2( 1.06374, 1.1833 )
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "  If you get 
+ to the portal 
+  you win!!!"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 11 )
+volume_db = 15.0
+
+[connection signal="pressed" from="VBoxContainer/BtnBack" to="." method="_on_BtnBack_pressed"]

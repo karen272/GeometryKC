@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/Player/cartel_Coleccionable.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Images/burger.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 42
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 55
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.129412, 0.317647, 0.568627, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.329412, 0.501961, 0.737255, 0.658824 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 76
+font_data = ExtResource( 2 )
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="cartel_monedas" parent="." instance=ExtResource( 1 )]
+margin_left = 164.0
+margin_right = 584.0
+margin_bottom = 99.0
+rect_scale = Vector2( 1.13338, 1.02799 )
+custom_fonts/font = SubResource( 1 )
+text = "= "
+
+[node name="BtnBack" type="Button" parent="."]
+margin_left = 980.0
+margin_top = 48.0
+margin_right = 1251.0
+margin_bottom = 115.0
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+text = "Back"
+
+[node name="PressSpace" type="Label" parent="."]
+margin_left = 269.0
+margin_top = 329.0
+margin_right = 1061.0
+margin_bottom = 421.0
+custom_fonts/font = SubResource( 5 )
+text = "Press space to play"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 113, 74 )
+scale = Vector2( 0.36675, 0.36675 )
+texture = ExtResource( 3 )
+
+[connection signal="pressed" from="BtnBack" to="cartel_monedas" method="_on_BtnBack_pressed"]

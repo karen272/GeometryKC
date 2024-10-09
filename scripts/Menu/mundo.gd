@@ -1,11 +1,16 @@
 extends Node2D
 
+func _ready():
+    $AudioStreamPlayer2D.play()
 
 func _on_BtnPlay_pressed():
     get_tree().change_scene("res://Scenes/Menu/ChooseLvl.tscn")
-    pass # Replace with function body.
-
+    pass 
 
 func _on_BtnQuit_pressed():
     get_tree().quit()
-    pass # Replace with function body.
+    pass 
+
+func _on_BtnHowToPlay_pressed():
+    get_tree().change_scene("res://Scenes/Menu/HowToPlay.tscn")
+    pass 

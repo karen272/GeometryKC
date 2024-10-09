@@ -12,7 +12,7 @@
 [node name="Bloques" type="Node2D" parent="."]
 
 [node name="StaticBody2D3" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 1172, 546 )
+position = Vector2( 2136, 524 )
 
 [node name="Collecionables" type="Node2D" parent="."]
 

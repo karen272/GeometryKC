@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Xolonium-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/crustaceoCascarudo.jpg" type="Texture" id=2]
 [ext_resource path="res://scripts/Menu/mundo.gd" type="Script" id=3]
+[ext_resource path="res://sounds/introSound.mp3" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -12,7 +13,7 @@ font_data = ExtResource( 1 )
 bg_color = Color( 0.145098, 0.631373, 0.666667, 0.517647 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 70
+size = 55
 font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=5]
@@ -55,28 +56,28 @@ margin_right = 911.0
 margin_bottom = 267.0
 custom_fonts/font = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
-text = "      Inicio"
+text = "   Welcome"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 419.0
+margin_left = 345.0
 margin_top = 326.0
-margin_right = 777.0
+margin_right = 798.0
 margin_bottom = 417.0
 rect_scale = Vector2( 1.28, 1.28 )
 
 [node name="BtnPlay" type="Button" parent="VBoxContainer"]
-margin_right = 358.0
-margin_bottom = 85.0
+margin_right = 453.0
+margin_bottom = 67.0
 custom_fonts/font = SubResource( 3 )
 custom_styles/hover = SubResource( 5 )
 custom_styles/normal = SubResource( 4 )
 text = "Play"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
-margin_left = 419.0
-margin_top = 460.0
-margin_right = 877.0
-margin_bottom = 569.0
+margin_left = 415.0
+margin_top = 588.0
+margin_right = 873.0
+margin_bottom = 697.0
 
 [node name="BtnQuit" type="Button" parent="VBoxContainer2"]
 margin_right = 458.0
@@ -95,5 +96,25 @@ custom_fonts/font = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
 text = "    V: 3.5.3"
 
+[node name="VBoxContainer3" type="VBoxContainer" parent="."]
+margin_left = 345.0
+margin_top = 458.0
+margin_right = 804.0
+margin_bottom = 549.0
+rect_scale = Vector2( 1.28, 1.28 )
+
+[node name="BtnHowToPlay" type="Button" parent="VBoxContainer3"]
+margin_right = 459.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/normal = SubResource( 4 )
+text = "How to play"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = 15.0
+
 [connection signal="pressed" from="VBoxContainer/BtnPlay" to="." method="_on_BtnPlay_pressed"]
 [connection signal="pressed" from="VBoxContainer2/BtnQuit" to="." method="_on_BtnQuit_pressed"]
+[connection signal="pressed" from="VBoxContainer3/BtnHowToPlay" to="." method="_on_BtnHowToPlay_pressed"]

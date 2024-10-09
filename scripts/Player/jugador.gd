@@ -22,6 +22,7 @@ func _physics_process(delta):
     if not has_started:
         if Input.is_action_pressed("salto"):
             has_started = true
+            $HUD.get_node("PressSpace").hide()
         return
 
     if not is_on_floor():
@@ -50,12 +51,16 @@ func death():
         Global.coleccionable = 0
 
 
-
-
 func _on_Timer_timeout():
     get_tree().reload_current_scene()
 
 
 func _on_portal_body_entered(body):
     get_tree().change_scene("res://Scenes/Menu/ChooseLvl.tscn")
+    pass 
+
+
+func _on_BtnBack_pressed():
+    get_tree().change_scene("res://Scenes/Menu/ChooseLvl.tscn")
     pass # Replace with function body.
+

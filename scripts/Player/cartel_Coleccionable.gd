@@ -2,7 +2,7 @@ extends Label
 #var personaje
 
 func _process(delta):
-    $".".text="Hamburguesistas: "+str(Global.coleccionable)
+    $".".text="= "+str(Global.coleccionable)
     
 
 #func _ready():
@@ -10,3 +10,8 @@ func _process(delta):
     #personaje = get_tree().root.get_node("res://scripts/Player/jugador.gd")  
 
    
+
+
+func _on_BtnBack_pressed():
+    get_tree().change_scene("res://Scenes/Menu/ChooseLvl.tscn")
+    pass # Replace with function body.
