@@ -5,7 +5,6 @@ const JUMP_VELOCITY = -1000
 
 var gravity = 4100
 var velocity = Vector2()
-var is_dead = false
 var has_started = false
 var jump_count = 0
 var max_jumps = 2
@@ -17,8 +16,6 @@ func _ready():
     $Timer.stop()
 
 func _physics_process(delta):
-    if is_dead:
-        return
 
     if not has_started:
         if Input.is_action_pressed("salto"):
@@ -39,17 +36,15 @@ func _physics_process(delta):
     velocity = move_and_slide(velocity, Vector2.UP)
 
 func death():
-    if not is_dead:
-        is_dead = true
-        SPEED = 0
-        $Sprite.visible = false
+    SPEED = 0
+    $Sprite.visible = false
 
-        if $AudioStreamPlayer2D.playing:
-            $AudioStreamPlayer2D.stop()
+    if $AudioStreamPlayer2D.playing:
+        $AudioStreamPlayer2D.stop()
 
-        $AudioStreamPlayer2D.play()
-        $Timer.start()
-        Global.coleccionable = 0
+    $AudioStreamPlayer2D.play()
+    $Timer.start()
+    Global.coleccionable = 0
 
 
 func _on_Timer_timeout():
