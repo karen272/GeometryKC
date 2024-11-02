@@ -1,8 +1,11 @@
 extends Node
 
-var coleccionable= 0 
+var coleccionable = 0  # Contador de coleccionables
 
-signal Coleccionable_chanchaged(coleccionable)
+# Señal para notificar cambios en el valor de coleccionables
+signal coleccionable_changed(new_value)
 
-func refresh_Coleccionable(var delta):
+# Método para actualizar el valor de coleccionables
+func refresh_coleccionable(delta):
     coleccionable += delta
+    emit_signal("coleccionable_changed", coleccionable)  # Emite la señal cada vez que se actualiza

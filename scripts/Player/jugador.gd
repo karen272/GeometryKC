@@ -46,6 +46,8 @@ func death():
     $Timer.start()
     Global.coleccionable = 0
 
+func add_coin():
+    Global.refresh_coleccionable(1) 
 
 func _on_Timer_timeout():
     get_tree().reload_current_scene()
