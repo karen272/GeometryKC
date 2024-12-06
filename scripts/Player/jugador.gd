@@ -54,7 +54,7 @@ func _on_Timer_timeout():
 
 
 func _on_portal_body_entered(body):
-    get_tree().change_scene("res://Scenes/Menu/ChooseLvl.tscn")
+    get_tree().change_scene("res://Scenes/Menu/Winner.tscn")
     pass 
 
 

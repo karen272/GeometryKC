@@ -29,101 +29,73 @@ position = Vector2( 1545, 3 )
 [node name="StaticBody2D13" parent="Bloques" instance=ExtResource( 1 )]
 position = Vector2( 581, 521 )
 
-[node name="StaticBody2D14" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 1073, 517 )
-
-[node name="StaticBody2D15" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 1584, 517 )
-
-[node name="StaticBody2D16" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 2133, 521 )
-
-[node name="StaticBody2D18" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 2896, 263 )
-
 [node name="StaticBody2D19" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 4387, 528 )
+position = Vector2( 3081, 533 )
 
 [node name="StaticBody2D23" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 8698, 521 )
-
-[node name="StaticBody2D26" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 11898, 519 )
-
-[node name="StaticBody2D27" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 12434, 526 )
+position = Vector2( 6774, 513 )
 
 [node name="StaticBody2D24" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 9218, 501 )
-scale = Vector2( 1, 1.96 )
+position = Vector2( 7220, 515 )
 
 [node name="StaticBody2D25" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 9725, 445 )
-scale = Vector2( 1, 2.32 )
-
-[node name="StaticBody2D22" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 7087, 169 )
-scale = Vector2( 12.44, 1 )
+position = Vector2( 10229, 566 )
+scale = Vector2( 8.08089, 1.55231 )
 
 [node name="StaticBody2D20" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 4789, 464 )
+position = Vector2( 3476, 491 )
+scale = Vector2( 1, 1.88 )
+
+[node name="StaticBody2D22" parent="Bloques" instance=ExtResource( 1 )]
+position = Vector2( 3867, 501 )
 scale = Vector2( 1, 1.88 )
 
 [node name="StaticBody2D21" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 5304, 444 )
+position = Vector2( 4258, 452 )
 scale = Vector2( 1, 2.4 )
-
-[node name="StaticBody2D17" parent="Bloques" instance=ExtResource( 1 )]
-position = Vector2( 2946, 378 )
-scale = Vector2( 6.92, 1 )
 
 [node name="Collecionables" type="Node2D" parent="."]
 position = Vector2( 1545, 3 )
 
-[node name="moneda11" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 1073, 378 )
-
-[node name="moneda12" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 1584, 378 )
-
-[node name="moneda13" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 2133, 378 )
-
 [node name="moneda14" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 2896, 118 )
+position = Vector2( 581, 395 )
 
 [node name="moneda15" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 4387, 375 )
-
-[node name="moneda16" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 4789, 260 )
-
-[node name="moneda17" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 5304, 199 )
-
-[node name="moneda18" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 6410, 507 )
-
-[node name="moneda19" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 7087, 511 )
-
-[node name="moneda20" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 7598, 504 )
+position = Vector2( 3081, 380 )
 
 [node name="moneda21" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 9218, 291 )
+position = Vector2( 2323, 515 )
 
-[node name="moneda22" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 10850, 375 )
+[node name="moneda18" parent="Collecionables" instance=ExtResource( 2 )]
+position = Vector2( 3691, 268 )
+
+[node name="moneda16" parent="Collecionables" instance=ExtResource( 2 )]
+position = Vector2( 4258, 207 )
+
+[node name="moneda17" parent="Collecionables" instance=ExtResource( 2 )]
+position = Vector2( 5332, 371 )
+
+[node name="moneda19" parent="Collecionables" instance=ExtResource( 2 )]
+position = Vector2( 7001, 326 )
 
 [node name="moneda23" parent="Collecionables" instance=ExtResource( 2 )]
-position = Vector2( 12210, 344 )
+position = Vector2( 8593, 501 )
+
+[node name="moneda20" parent="Collecionables" instance=ExtResource( 2 )]
+position = Vector2( 10199, 240 )
+
+[node name="moneda22" parent="Collecionables" instance=ExtResource( 2 )]
+position = Vector2( 11862, 517 )
 
 [node name="Spikes" type="Node2D" parent="."]
 position = Vector2( 1545, 3 )
 
 [node name="Area2D50" parent="Spikes" instance=ExtResource( 4 )]
 position = Vector2( 706, 521 )
+scale = Vector2( 0.4, 0.4 )
+
+[node name="Area2D59" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( -228, 526 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D51" parent="Spikes" instance=ExtResource( 4 )]
@@ -134,136 +106,72 @@ scale = Vector2( 0.4, 0.4 )
 position = Vector2( 947, 519 )
 scale = Vector2( 0.4, 0.4 )
 
+[node name="Area2D57" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 1868, 519 )
+scale = Vector2( 0.4, 0.4 )
+
 [node name="Area2D53" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 1196, 515 )
+position = Vector2( 2988, 559 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D54" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 1324, 513 )
+position = Vector2( 3197, 557 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D55" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 1448, 511 )
+position = Vector2( 3290, 555 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D56" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 1726, 509 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D57" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 1858, 507 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D58" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 1998, 511 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D59" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 3018, 245 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D60" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 3132, 245 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D61" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 3226, 245 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D62" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 3324, 245 )
+position = Vector2( 3383, 553 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D63" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 4522, 512 )
+position = Vector2( 3598, 536 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D64" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 4667, 516 )
+position = Vector2( 3743, 540 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D65" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 4907, 528 )
+position = Vector2( 3978, 523 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D66" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 5037, 522 )
+position = Vector2( 4071, 521 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D67" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 5181, 514 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D68" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 6028, 528 )
+position = Vector2( 4164, 523 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D69" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 6760, 547 )
+position = Vector2( 5332, 540 )
+scale = Vector2( 0.4, 0.4 )
+
+[node name="Area2D68" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 6899, 522 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D70" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 7328, 549 )
+position = Vector2( 6992, 515 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D71" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 7896, 551 )
+position = Vector2( 7085, 513 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D72" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 8838, 510 )
+position = Vector2( 10234, 428 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D73" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 8964, 514 )
+position = Vector2( 10123, 428 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Area2D74" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 9087, 517 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D75" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 9353, 509 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D76" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 9482, 509 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D77" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 9601, 511 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D79" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 10718, 552 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D80" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 10795, 553 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D81" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 10888, 551 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D82" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 10981, 551 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D83" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 12025, 515 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D84" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 12118, 515 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D85" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 12211, 519 )
-scale = Vector2( 0.4, 0.4 )
-
-[node name="Area2D86" parent="Spikes" instance=ExtResource( 4 )]
-position = Vector2( 12304, 522 )
+position = Vector2( 10343, 428 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="suelo" parent="." instance=ExtResource( 3 )]
