@@ -8,7 +8,6 @@
 [ext_resource path="res://Sounds/LevelSound.mp3" type="AudioStream" id=6]
 [ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=8]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 64, 64 )
 
