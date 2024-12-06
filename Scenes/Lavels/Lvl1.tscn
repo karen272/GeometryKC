@@ -343,7 +343,7 @@ position = Vector2( 14766, -147 )
 scale = Vector2( 6.01629, 5.53085 )
 
 [node name="jugador" parent="." instance=ExtResource( 5 )]
-position = Vector2( 83, 524 )
+position = Vector2( 83, 515 )
 
 [node name="Camera2D" type="Camera2D" parent="jugador"]
 offset = Vector2( 400, 0 )
