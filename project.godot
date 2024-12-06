@@ -11,12 +11,12 @@ config_version=4
 [application]
 
 config/name="Geometry Kc"
-run/main_scene="res://Scenes/Menu/mundo.tscn"
+run/main_scene="res://Menu/mundo.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Global="*res://scripts/global.gd"
+Global="*res://Scripts/global.gd"
 
 [display]
 

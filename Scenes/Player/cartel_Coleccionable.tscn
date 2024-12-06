@@ -2,7 +2,6 @@
 
 [ext_resource path="res://HUD/cartel_Coleccionable.gd" type="Script" id=1]
 
-
 [node name="cartel_monedas" type="Label"]
 margin_left = 40.0
 margin_top = 48.0

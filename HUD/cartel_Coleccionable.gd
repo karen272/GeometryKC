@@ -7,4 +7,4 @@ func update_text(new_value):
     text = "= " + str(new_value)  
 
 func _on_BtnBack_pressed():
-    get_tree().change_scene("res://Scenes/Menu/ChooseLvl.tscn")
+    get_tree().change_scene("res://Menu/ChooseLvl.tscn")
